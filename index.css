@@ -1,0 +1,261 @@
+/*                          PAGE D'INDEX                                */
+
+body
+{
+    margin: 0;
+    font-family: "Source code pro",Verdana;
+}
+
+header
+{
+   
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 50px 20px;
+    box-sizing: border-box;
+    width: 300px;
+    height: 100vh;
+    background: #000;
+    transition: 0.5s;
+    z-index: 100000;
+    overflow-y: auto;
+}
+
+input[type="checkbox"]
+{
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    width: 50px;
+    height: 50px;
+    z-index: 100000;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.icon{
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    width: 50px;
+    height: 50px;
+    z-index: 100001;
+    pointer-events: none;
+}
+
+.icon:before{
+    content: url(iconon.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+input[type="checkbox"]:checked ~ .icon:before
+{
+    content: url(icono.png);
+}
+
+header,ul{
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 50px 20px;
+    box-sizing: border-box;
+    width: 300px;
+    height: 100vh;
+    background: #000;
+    transition: 0.5s;
+    z-index: 100000;
+    overflow-y: auto;
+}
+input[type="checkbox"]:checked ~ ul
+{
+    left: -300px;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    display: block;
+    color: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 700;
+    transition: 0.5s;
+}
+
+ul li a:hover{
+    transform: translateX(10px);
+    color:#8ee8;
+}
+
+section.index{
+    height: 33.3%;
+    width: 100%;
+    position: relative;
+    left: 300px;
+    padding: 100px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+section.index p.text
+{
+    font-size: 300%;
+    text-align: center;
+    color: #8ee8;
+}
+
+section#hotel
+{
+    background: url(telo2.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+section#hotel1
+{
+    background: url(telo1.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
+section#hotel2
+{
+    background: url(telo3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#logo{
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    height: 200px;
+    width: 200px;
+}
+
+input[type="checkbox"]:checked ~ section
+{
+    left: 0;
+}
+
+/*                                      PAGE LIVRE OR           */
+
+section#commentaire
+{
+    width: 100%;
+    height: 20%;
+    border: #8ee8 solid 1px;
+    background:url(livre.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/*                                      PAGE DE CONNEXION && INSCRIPTION               */
+
+
+body#connexion
+{
+    margin: 0;
+    font-family: "Source code pro",Verdana;
+    background: url(telo1.jpg);
+    background-size: cover;
+}
+
+
+body#register
+{
+    margin: 0;
+    font-family: "Source code pro",Verdana;
+    background: url(telo1.jpg);
+    background-size: cover;
+}
+
+.login
+{
+    width: 22%;
+    height: 100%;
+    background: transparent;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing:border-box;
+   padding: 5px 10px;
+}
+
+ h3
+{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+input
+{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+input[type="text"], input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+}
+ input[type="text"]:hover, input[type="password"]:hover
+{
+    
+    color: #8ee8;
+    font-size: 220%;
+}
+
+input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 25px;
+    width: 75px;
+    background: #8ee8;
+    color: #fff;
+    border-radius: 5px;
+}
+
+
+
+input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: #00fd2a;
+    color: #fff;
+}
+
+ a
+{
+    text-decoration: none;
+    line-height: 20px;
+    color: #8ee8;
+}
+
+a:hover
+{
+    color: #00fd2a;
+}
